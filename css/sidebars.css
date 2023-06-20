@@ -3,6 +3,7 @@
 :root {
   --active: hsla(198, 83%, 64%, 0.1);
   --light: #f8f9fa;
+  --main: #55C1EF;
 
 }
 
@@ -18,7 +19,7 @@ html {
 
 main {
   display: grid;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 1fr 6fr;
   /* flex-wrap: nowrap; */
   height: 100vh;
   max-height: 100vh;
@@ -36,9 +37,18 @@ nav{
 
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
-  color: #55C1EF;
+  color: var(--main);
   background-color: var(--active);
 }
+
+.nav-link.act{
+  color: #55C1EF;
+}
+
+.act{
+  color: #55C1EF;
+}
+
 
 .b-example-divider {
   width: 1.5rem;
@@ -110,13 +120,39 @@ nav{
 .fw-semibold { font-weight: 600; }
 .lh-tight { line-height: 1.25; }
 
-.nav-link .act{
-  color: #55C1EF;
-}
+
 
 .form-control{
   background-color: var(--light);
 }
+
+.btnt{
+  background-color: var(--main);
+}
+
+.bg-soft{
+  background-color: var(--light);
+}
+
+
+.dropdown-item {
+  width: 300px; /* Adjust the width as needed */
+  white-space: normal;
+  word-spacing: 0.5px;
+  /* line-height: 20px; */
+  word-wrap: break-word;
+}
+
+.dropdown-divider{
+  background-color: var(--light);
+}
+
+
+
+
+
+
+
 
 
 /* Custom dropdown */
@@ -167,6 +203,11 @@ nav{
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
   transform: scale(1);
+}
+
+.form-control:focus{
+  box-shadow: none;
+  background-color: var(--light);
 }
 
 /* button */
