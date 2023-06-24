@@ -9,6 +9,7 @@
 
 body {
   min-height: 100vh;
+  background: var(--light);
   font-family: 'Nunito', sans-serif;
   min-height: -webkit-fill-available;
 }
@@ -20,15 +21,26 @@ html {
 main {
   display: grid;
   grid-template-columns: 1fr 6fr;
-  /* flex-wrap: nowrap; */
-  height: 100vh;
-  max-height: 100vh;
   overflow-x: auto;
   overflow-y: hidden;
 }
 
 nav{
   width: 100%;
+}
+
+.main-cont{
+  width: calc(100vw - 220px); 
+  margin-left: 220px;
+}
+
+.tin{
+  width: 100%; 
+  position: absolute;
+  top:calc(100% - 230px) ;
+  bottom: 100px;
+  left: 100px;
+  right: 50px;
 }
 
 .nav-link{
@@ -113,6 +125,9 @@ nav{
   background-color: #d2f4ea;
 }
 
+.card{
+  border-radius: 10px;
+}
 .scrollarea {
   overflow-y: auto;
 }
@@ -218,15 +233,38 @@ nav{
   box-shadow: none;
 }
 
+.sip{
+  background-color: var(--active);
+}
+
+.fs-p{
+  font-size: 15px;
+}
+
+.fs-q{
+  font-size: 12px;
+}
 
 @media screen and (max-width: 768px) {
   main {
     display: grid;
     grid-template-columns: 4fr;
-    height: 100vh;
-    max-height: 100vh;
     overflow-x: auto;
     overflow-y: hidden;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    display: grid;
+    /* grid-template-columns: 4fr; */
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+
+  .main-cont{
+    width: 100%; 
+    margin-left: 0px;
   }
 }
 

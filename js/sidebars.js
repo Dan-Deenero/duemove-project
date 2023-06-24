@@ -6,3 +6,6 @@
     new bootstrap.Tooltip(tooltipTriggerEl)
   })
 })()
+
+
+console.log(window);
