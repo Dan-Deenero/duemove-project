@@ -34,6 +34,22 @@ nav{
   margin-left: 220px;
 }
 
+.zigi{
+  width: 18px;
+  height: 18px;
+}
+
+form{
+  font-size: 17px;
+ }
+
+.form-check > label{
+  font-size: 17px;
+}
+
+.img-container{
+  width: 130px;
+}
 .tin{
   width: 100%; 
   position: absolute;
@@ -61,6 +77,14 @@ nav{
   color: #55C1EF;
 }
 
+.coni{
+  width: 12px;
+  height: 12px;
+}
+
+.w-md-50 {
+    width: 50%;
+  }
 
 .b-example-divider {
   width: 1.5rem;
@@ -162,7 +186,64 @@ nav{
   background-color: var(--light);
 }
 
+.colos{
+  color: #C8C8C8;
+}
 
+.avar{
+  position: relative;
+  width: 167px;
+  height: 167px;
+  overflow: hidden;
+  border-radius:50%;
+  
+  /* z-index: 100;
+  top: 130px;
+  left: 340px; */
+
+}
+
+.viv{
+  z-index: 0;
+  overflow: hidden;
+  top: 28%;
+  left: 25%;
+}
+
+/* .grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 200px;
+} */
+
+.grid-item {
+  padding: 5px;
+  width: 200px;
+}
+
+.grid-item > img{
+  width: 90px;
+  object-fit: contain;
+}
+
+.item-span-two {
+  grid-row: span 2;
+}
+
+.overlay {
+  position: absolute;
+  top: 72%;
+  left: 0px;
+  padding-top: 5px;
+  padding-left: 65px;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  width: 167px; /* Adjust the size of the overlay as needed */
+  height: 167px; /* Adjust the size of the overlay as needed */
+  background-color: rgba(255, 255, 255, 0.5); /* Adjust the background color and transparency as needed */
+  border-radius:0 0 100px 100px ;
+}
 
 
 
@@ -265,6 +346,22 @@ nav{
   .main-cont{
     width: 100%; 
     margin-left: 0px;
+  }
+   form{
+    font-size: 13px;
+   }
+  .form-check > label{
+    font-size: 13px;
+  }
+  .img-container{
+    width: 100%;
+  }
+  .cols{
+    width: 100%;
+    
+  }
+  .w-md-50 {
+    width: 100%;
   }
 }
 
